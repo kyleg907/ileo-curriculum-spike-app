@@ -1,0 +1,43 @@
+@media print {
+  body {
+    font-size: 70% !important;
+    max-width: 7.75in !important;
+  }
+
+  img:not(.print-full) {
+    max-width: 2in;
+    height: auto;
+  }
+
+  img.print-full {
+    width: 100%;
+    height: auto;
+  }
+
+  tr {
+    break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  h1,
+  h1 h2:not(:first-child) {
+    break-before: always;
+  }
+
+  @page {
+    size: Letter;
+    margin: 0.3in 0.3in 0.6in 0.3in;
+
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font-size: 0.7em;
+    }
+  }
+}
+
+em {
+  font-weight: bold;
+}

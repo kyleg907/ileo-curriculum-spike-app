@@ -1,0 +1,762 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ILEO Weekly Curriculum with LEGO® SPIKE™ App software",
+    "section": "",
+    "text": "Welcome!\nYou will learn how to build, program, and test LEGO® robots through hands-on projects and challenges. You’ll also learn about engineering concepts such as working in team, planning, iteration and testing. Ask your IBM or other professional volunteers about engineering and other careers in technology!\nThis document contains the lessons for the ILEO program for LEGO® Education SPIKE™ robots with the SPIKE App software.",
+    "crumbs": [
+      "Welcome!"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-intro.html",
+    "href": "spike-app/spike-intro.html",
+    "title": "Introduction to the LEGO® Education SPIKE™ Robot",
+    "section": "",
+    "text": "The SPIKE™ Intelligent brick (aka the ‘brick’)\nYour robot kit contains\nYou might see, or even use, LEGO MINDSTORMS EV3 and LEGO MINDSTORMS NXT robots in your classroom. Other documents discuss those robots and programming software.\nLet’s look at the SPIKE brick briefly. The brick contains a micro USB port and four ports to connect to motors labeled A through F. Typically port B connects to the left motor, and port C connects to the right motor. The SPIKE brick has a USB Micro-B connector which we use to connect to a Windows, Mac, or ChromeBook (with the SPIKE web app) computer to download programs to the robot. The SPIKE also supports Bluetooth for downloading programs to the robot.",
+    "crumbs": [
+      "Introduction to the LEGO® Education SPIKE&trade; Robot"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-intro.html#the-spike-intelligent-brick-aka-the-brick",
+    "href": "spike-app/spike-intro.html#the-spike-intelligent-brick-aka-the-brick",
+    "title": "Introduction to the LEGO® Education SPIKE™ Robot",
+    "section": "",
+    "text": "Micro-USB connector and left ports A, C, E on the SPIKE brick\n\n\n\n\n\n\nRight ports B, D, F on the SPIKE brick",
+    "crumbs": [
+      "Introduction to the LEGO® Education SPIKE&trade; Robot"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-intro.html#motors",
+    "href": "spike-app/spike-intro.html#motors",
+    "title": "Introduction to the LEGO® Education SPIKE™ Robot",
+    "section": "Motors",
+    "text": "Motors\nSPIKE kits contain one large motor and two medium motors. SPIKE robots typically use the medium motors to move the robot, and the large motor to drive accessories.\n\n\n\n\n\n\n\n\n\nSPIKE large motor\n\n\n\n\n\n\n\n\n\n\nSPIKE medium motor\n\n\n\n\n\n\n\n\n\n\n\nCaution\n\n\n\nAvoid pushing the robot across the floor/table or spinning the motor quickly with your hands: that can DAMAGE your motor! Spinning the motors slowly is ok: some programs might use the motor position as a way to affect the behavior of the robot.\n\n\nWhen we program the motor to go clockwise (the default) with the blue motor blocks, the motor drum will turn clockwise as in Figure 2. With the pink movement blocks, forward means “turn the motor clockwise”. You’ll learn more about programming movement in the next lesson.\n\n\n\n\n\n\nFigure 2: Clockwise motor hub rotation\n\n\n\nThe Driving Base 1 robot uses medium motors to drive the robot, and the large motor for accessories.\n\n\n\n\n\n\n\nSPIKE Driving Base robot we’ll use in class",
+    "crumbs": [
+      "Introduction to the LEGO® Education SPIKE&trade; Robot"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-intro.html#the-spike-web-app",
+    "href": "spike-app/spike-intro.html#the-spike-web-app",
+    "title": "Introduction to the LEGO® Education SPIKE™ Robot",
+    "section": "The SPIKE web app",
+    "text": "The SPIKE web app\nAs of this writing, the LEGO group offers a web-based portal for programming SPIKE robots at https://spike.legoeducation.com. If your device is Windows-based or a Chromebook and the device has Google’s Chrome web browser, this app lets you program your SPIKE robot without having to install an app. You must use the USB cable to download programs to the robot.\nFollow your instructor’s guidance on whether you’ll be using an app on your device, or the web version.\n\n\n\n\n\n\nCaution\n\n\n\nWith the SPIKE web app, your projects are not saved automatically. Most of the apps you use probably save data as you work. Do not lose the program you’ve worked so hard on!\nYou must remember to download your project by clicking the ‘Save’ button to download a file to your computer. Be clear on what directory or cloud folder (in the case of Chromebooks) you’ve put it.\nIn the next class, you can open the SPIKE App, and open this file from your computer so you can resume your work.",
+    "crumbs": [
+      "Introduction to the LEGO® Education SPIKE&trade; Robot"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-intro.html#build-instructions",
+    "href": "spike-app/spike-intro.html#build-instructions",
+    "title": "Introduction to the LEGO® Education SPIKE™ Robot",
+    "section": "Build instructions",
+    "text": "Build instructions\nSPIKE™ App contains the instructions for the Driving Base (and other) robots. The plans are also available online at https://ibm.biz/BdP2us. For this first lesson we only need a basic driving robot, known as the Driving Base 1: we’ll add sensors add attachments in later lessons. Your instructor might provide other plans today as an alternative.\n\nClick Home to go to the home screen.\nScroll down and click the Unit Plans area.\n\n\n\nUnit Plans on the home screen\n\n\nOn the next screen, check if the Competition Ready plan needs to be downloaded. If it appears with a DOWNLOAD prompt as in Figure 1.2 (a), click it once to download the plans. While we will not use this lesson plan, it will download robot build instructions we’ll need.\n\n\n\n\n\n\n\n\n\n\n\n(a) Lesson not yet downloaded\n\n\n\n\n\n\n\n\n\n\n\n\nLesson available\n\n\n\n\n\n\nFigure 1.2: Locate the Driving Base 1 build instructions\n\n\n\nOnce the download has completed, click Home to return to the home screen.\nFrom the home screen, scroll down to Building Instructions\n\n\n\nBuilding instructions\n\n\nClick Building Instructions to show the available plans. Of this screen does not show instructions, the download for the Competition ready lesson has not completed.\n\n\n\n\n\n\n\n\n\n\n\n\nAll building instructions\n\n\n\n\n\n\n\n\n\n\n\nDriving Base 1 card\n\n\n\n\n\n\nFigure 1.3\n\n\n\nFind and open Driving Base 1. You’ll see the following page where the first step is to connect the SPIKE battery.\n\n\n\nDriving Base 1 first page\n\n\n\nFollow the rest of the instructions and build the robot now. Do not build any accessories for the robot or follow any other build instructions in the SPIKE App, unless directed by the lessons. Proceed to the next section after you build your robot.",
+    "crumbs": [
+      "Introduction to the LEGO® Education SPIKE&trade; Robot"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson1.html",
+    "href": "spike-app/spike-lesson1.html",
+    "title": "Lesson 1: Write a Simple Drive Forward Program",
+    "section": "",
+    "text": "Create a Project\nTo make the robot move, we need to tell the brick what motor ports we connected the drive motors (the motors attached to the wheels) to. Then we can command the motors to move and drive the robot. We’ll build the program with the SPIKE App on a laptop or tablet, then we’ll connect to the robot and download your program to test it.\nClick the gray ‘plus’ icon near the middle of the screen to create a new project.\nSPIKE App offers three options for creating programs:\nClick the Home icon in the navigation bar, and click New Project. Then name the project with something descriptive like My first SPIKE Project, click WORD BLOCKS, then click the Create button.\nThe white open area is the Programming Canvas. This is where you will add programming blocks to control your robot. The colorful side part is the Block Palette where the programming blocks live. You can click on the colored dots to scroll the Block Palette to a specific set of functions.",
+    "crumbs": [
+      "Lesson 1: Write a Simple Drive Forward Program"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson1.html#create-a-project",
+    "href": "spike-app/spike-lesson1.html#create-a-project",
+    "title": "Lesson 1: Write a Simple Drive Forward Program",
+    "section": "",
+    "text": "WORD BLOCKS\n\nSimilar to SCRATCH. https://scratch.mit.edu\nWe recommend word blocks for all programs.\nThis document will only cover word blocks.\n\nICON BLOCKS: (similar to EV3 Lab for those who have used that in the past)\nPython - A popular programming language used by professionals and hobbyists. Ask your mentors if they use Python! https://python.org\n\n\n\n\nSPIKE App New Project dialog.\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nChoose WORD BLOCKS when creating your programs.\n\n\n\n\n\n\n\n\nTip\n\n\n\nAlways use descriptive names for your projects. It will make them easier to find on your device. SPIKE bricks do not have an LCD display like other MINDSTORMS robots do, so you cannot see which programs the brick contains. The SPIKE App loads programs into slots numbered 0 through 19.\n\n\n\n\n\n\nSPIKE App Programming Canvas",
+    "crumbs": [
+      "Lesson 1: Write a Simple Drive Forward Program"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson1.html#writing-the-code",
+    "href": "spike-app/spike-lesson1.html#writing-the-code",
+    "title": "Lesson 1: Write a Simple Drive Forward Program",
+    "section": "Writing the Code",
+    "text": "Writing the Code\nThe SPIKE App can download and run programs in a single step with the Play button. With the Play button, the robot could start moving when you’re not quite ready: the USB cable might be connected, you may wish to put the robot on the ground, etc. So we’ll start every program with a wait block that will prevent the rest of the program from running until you press a brick button.",
+    "crumbs": [
+      "Lesson 1: Write a Simple Drive Forward Program"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson1.html#programming-exercise",
+    "href": "spike-app/spike-lesson1.html#programming-exercise",
+    "title": "Lesson 1: Write a Simple Drive Forward Program",
+    "section": "Programming Exercise",
+    "text": "Programming Exercise\nClick and drag an orange control wait until block from the Block palette. Drag it near the when program starts block on the canvas, then a shadow will appear, and then you can release the block and the new block will snap into place. This is how you’ll build your entire program.\nNow click and drag a teal sensors is left button pressed block and drop it to the wait until block to place this sensor command into the wait until block.\nClick and drag the pink movement block set movement motors to block from the Block palette. Each programming block tells the robot different things to do. The set movement motors to block configures two motors that other movement blocks control.\nBy convention (meaning a common practice), we connect SPIKE motor ports A and B (the first ports on either side of the intelligent brick) to the drive motors. If you follow this convention, it will save you a little time in creating your programs. You may select any of the ports A through F to use as drive motors, or for any other function, you’ll just have to remember to change the blocks to use the correct port when you add them to the program. Sensors, as we’ll discuss later, can also plug into any of the A-F ports. Interestingly, the Driving Base 1 robot we typically build with this lesson does not follow this convention. So today you’ll need to change the ports in the program, or move the wires on your robot.\n\n\n\nConfiguring motor ports\n\n\nNext, click and drag a pink movement move block from the Block Palette and connect it to your program. Click the Your program should look like the following figure. Avoid the start moving blocks for any of your programs for now.\n\n\n\nSimple drive forward program.\n\n\nWith the Driving Base 1 robot, and the pink movement blocks, moving forward means moving the motors clockwise. With other robot designs or motor orientations, you might need to adjust your program as you may need to tell the program to move backward so certain robots move forward. That or you have a mistake (or bug) in your program or robot design.\nBut if we mount the motor upside down on the robot and the program tells the motor to move FORWARD, the robot will actually move BACKWARD. This isn’t wrong, we might have to adjust the program to make the robot behave how we want. Also, depending on what motor you connect as B or C, left and right could be the opposite of what you expect, which you must adjust for to make the robot steer the way you want.\nPower on your robot. On the Spike brick, press the large round button until it lights up.\n\n\n\n\n\n\nNote\n\n\n\nThese are common errors when building and programming an SPIKE robot. Check these first when you have problems:\n\nThe ports specified in the program do not match robot build. Depending on how far along you are, it might be easier to change the program or the robot.\nMake sure C and D are selected as shown by clicking C first for left and D second for right. If you click them in the wrong order, or accidentally C or D a second time, the order will be reversed. This means that when your program says “go forward” the robot will move backward, and turning left and right will be reversed.\n\nWith Driving Base 1 the back of the robot (and backward direction) is where the white roller ball and the bottom of the brick where the left, right and large button are.\n\nForgetting to connect a wire from the intelligent brick to the motor or wire.\nThe wire might not be fully seated in the port. Unplug and re-plug the wires on the brick side.",
+    "crumbs": [
+      "Lesson 1: Write a Simple Drive Forward Program"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson1.html#download-the-program-to-the-spike-brick",
+    "href": "spike-app/spike-lesson1.html#download-the-program-to-the-spike-brick",
+    "title": "Lesson 1: Write a Simple Drive Forward Program",
+    "section": "Download the Program to the SPIKE brick",
+    "text": "Download the Program to the SPIKE brick\nConnect your device to the SPIKE brick using one of these methods.\n\nConnect the robot using the USB cable from your SPIKE kit. This is faster and less troublesome. This is supported with the following devices:\n\nSPIKE App with a Windows or Mac computer.\nThe SPIKE web app with Google Chrome web browser on Windows, Mac, or Chromebook.\n\nIf you are using a tablet or a Chromebook with the SPIKE App, you’ll connect with Bluetooth.\n\nRight now, the Connect icon on the Programming Canvas should show a red dot, indicating no SPIKE is connected. Follow the instructions below for the connection method you choose.\n\n\n\nSPIKE not connected.\n\n\n\nOption 1: Connecting with a USB cable\nThis is the fastest and easiest method, but only works with Windows or Mac versions of SPIKE App, or with the web-based version of the SPIKE App with the Google Chrome browser.\nConnect the small end of the USB cable to the USB port on top of the SPIKE brick (one the side with the small Bluetooth button). The first time connecting a robot it may take some time to install drivers before the connection process will complete. The Connect icon show now show a green dot.\n\n\n\nSPIKE connected.\n\n\nYou might check that Bluetooth and Wifi are turned off on the brick, as you do not need them. This will save battery power.\n\n\nOption 2: Connecting with Bluetooth\n\n\n\n\n\n\nNote\n\n\n\nIf you are using the SPIKE web app with the Chrome browser, it does not support connecting to SPIKE over Bluetooth. You must use the USB cable as described in the previous section.\n\n\nMost devices that run SPIKE App have Bluetooth, a wireless technology that lets devices communicate. You’ve probably seen or used it to connect phones, tablets, speakers, headphones, entertainment or other devices together. Bluetooth must be enabled on the device and on the SPIKE brick, and the devices paired together. Sometimes Bluetooth connection can be problematic to setup or reconnect. Ask an instructor if you are having trouble with this.\n\nCheck that Bluetooth is enabled on the device that is running SPIKE App. Typically, you can access this in the taskbar or settings. It might take a few moments for Bluetooth to start.\nEnable Bluetooth on the SPIKE brick. Press the smaller button near the top of the brick that is marked with the Bluetooth ‘B’ symbol. SPIKE App also will show these steps when you try to connect. If this is the first time pairing this brick with your device, the Bluetooth button will flash and beep.\nClick the connect icon on your Programming Canvas in SPIKE App and follow the instructions to connect your SPIKE.\n\nA platform-specific dialog will appear showing SPIKE bricks (though you might need to wait a moment for SPIKE App to find and display your SPIKE). In a classroom environment there might be several. Hopefully, the name of the brick is the same as your MINDSTORMS kit number. Select the name of your brick.\n\n\n\nBluetooth pairing dialog (iPad dialog shown).\n\n\nThe brick should connect.\n\n\n\nSPIKE connected.\n\n\n\nClick the BACK TO PROJECT button. The connect icon should change.\n\n\n\nSPIKE connected.\n\n\nWhen connected, SPIKEshows the status of the connected motors and sensors. Clicking the connect icon will show more details about the connected sensors and motors. This is very useful when debugging your programs and understanding sensor inputs later.\n\n\n\nBrick details screen\n\n\n\n\n\n\n\n\nNote\n\n\n\nYou can rename the brick on this screen, but please avoid using a name other than your kit ID. This will help your instructors deal with connection problems in the class, and to ensure the bricks are placed with their correct kits.\n\n\n\nIf you have trouble with the Bluetooth connection work with your instructors and try these steps:\n\nClose the SPIKE App.\nGo into the settings for your device, find the Bluetooth settings. Un-pair any LEGO robots your device has previously connected to. The will vary depending on your platform (e.g. Forget this device action on iPad) .\nTurn off Bluetooth on your device, wait a few moments then turn it back on.\nYou might even restart the device that is running SPIKE App.\nTurn your SPIKE brick off, then back on.\nAttempt to pair the brick again.",
+    "crumbs": [
+      "Lesson 1: Write a Simple Drive Forward Program"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson1.html#prepare-to-run-and-emergency-stop-the-program",
+    "href": "spike-app/spike-lesson1.html#prepare-to-run-and-emergency-stop-the-program",
+    "title": "Lesson 1: Write a Simple Drive Forward Program",
+    "section": "Prepare to Run (and Emergency Stop) the Program",
+    "text": "Prepare to Run (and Emergency Stop) the Program\nPrepare the work area (and yourself) to make sure the robot, cables and computer won’t be damaged or become tangled when the robot starts moving. Be careful so the robot does not drive off of a table: running the robot on the floor might be better.\nTry not to disrupt others around you. You may need to quickly grab or stop the robot if it MISBEHAVES!\nTo stop the robot while your program runs, press the large white button: - Practice finding and pressing the button now.\nTo download the program to the SPIKE brick, click the yellow play button at the bottom of the programming canvas. This will download and run the program in a single step. Because we added the wait until block, the program will be running, but the robot will not perform any action until we press the left button on the brick.\n\n\n\nDownload to SPIKE in progress - yellow play button changes to spinning progress.\n\n\nThe program should download and run, but it will wait for you to press the left brick button. Prepare your area, remove the USB cable if it is connected, and place the robot (e.g. on the floor) to prepare it to run. Be ready to grab the robot and stop the program if it malfunctions. Press the left button on the brick now to run the remainder of your program.\nIf your robot moves forward slightly, CONGRATULATIONS! If not, double check your program and that the motor wires are connected properly.\nFeel free to change the settings in the move block in your program and observe how the robot’s behavior changes.\n\nincrease the number of centimeters\nchange the unit from centimeters to degrees\nchange the direction of the robot\n\nNow add a move right block and try to make the robot turn. Then add a blue motors block and move only one of the motors, C or D (assuming you wired your motors following that convention).\nYou should now have a few ways to turn the robot.",
+    "crumbs": [
+      "Lesson 1: Write a Simple Drive Forward Program"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson1.html#alternate-program-run-method",
+    "href": "spike-app/spike-lesson1.html#alternate-program-run-method",
+    "title": "Lesson 1: Write a Simple Drive Forward Program",
+    "section": "Alternate Program Run method",
+    "text": "Alternate Program Run method\nYour program will download to slot 0 on the brick by default. You can select a different slot by clicking the number at the bottom of the programming canvas This allows you to load multiple programs on the brick, and to run them using the brick buttons when you want.\n\n\n\nSPIKE App Download to Slot 1\n\n\nYou’ll use this method at the competition as you’ll already have downloaded your program to the robot via the download or download and run buttons. You can then run the program on the brick without needing SPIKE App. Practice this periodically during class before we go to the final competition. This also allows you to have multiple versions of a program that vary slightly since you can’t make changes to the program at the judging arena.",
+    "crumbs": [
+      "Lesson 1: Write a Simple Drive Forward Program"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge1.html",
+    "href": "challenges/challenge1.html",
+    "title": "Challenge Project #1: Maze Runner",
+    "section": "",
+    "text": "Objectives",
+    "crumbs": [
+      "Challenge Project #1: Maze Runner"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge1.html#objectives",
+    "href": "challenges/challenge1.html#objectives",
+    "title": "Challenge Project #1: Maze Runner",
+    "section": "",
+    "text": "Write a program to instruct the robot to move forward, backward, and turn left and right.\nDownload the program to your robot.\nDebug problems found while working on the maze.",
+    "crumbs": [
+      "Challenge Project #1: Maze Runner"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge1.html#project-description",
+    "href": "challenges/challenge1.html#project-description",
+    "title": "Challenge Project #1: Maze Runner",
+    "section": "Project Description",
+    "text": "Project Description\n\n\n\n\nNavigate through a simple maze, like the one pictured, staying within given boundaries.\n\nPlace your robot in the same starting position each attempt. Small deviations on the paths or turns early in the maze can add up to big deviations at the end!\nUse any marks on the surface, or build a measuring device from LEGO parts to help you.\nWrite a program to move forward one section of the maze. Get the first section working, then try the next.\nWrite a program that just rotates the robot 90 degrees (¼ turn). Once that is as accurate as possible, you can use that same setting for other turns.\nTry one and two-motor turns and see which works the best.\nMeasure the distance 1 rotation of the motors drives the robot in a straight line. Use this measurement to estimate the number of rotations for other parts of the maze.\n\n\n\n\n\n\nSample maze.",
+    "crumbs": [
+      "Challenge Project #1: Maze Runner"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson2.html",
+    "href": "spike-app/spike-lesson2.html",
+    "title": "Lesson 2: Oomph! I found the Wall",
+    "section": "",
+    "text": "Wait Until Blocks\nCompleting these challenges will require cooperation. Not just cooperation among your team members, but also cooperation between you and your robot. You, the smart, creative human, know the goal that the robot needs to achieve. You can picture in your mind the robot springing into action when you press a button, using its sensors to avoid the walls as it searches the arena. However, the robot lacks this kind of imagination. It only knows how to follow a set of instructions.\nSo it is up to you to create the plan and then communicate it to your robot. You might start out by writing out the set of steps the robot should follow, such as:\nThat looks like a good plan. Unfortunately, the robot doesn’t understand the words we wrote above. You need to tell those steps to your robot in a language it knows.\nRemember that your robot has no understanding of the big picture goal that you are trying to solve – it just knows to follow the instructions you gave it. If the robot doesn’t behave the way you expected (and on the first try it probably won’t!), that might be because the instructions aren’t quite right. Read over your program and see if you can spot the problem, then fix it and try again.\nLast session, we saw how the robot can follow a sequence of instructions one after the other (move forward, then turn left, and so on.) Another key aspect of a robot is taking input from its sensors and then deciding how to act. Today we’ll use the Force Sensor so the robot can detect walls, and react!\nFor example, we want our robot to search through a room by driving until it hits a wall, and then turns right. Our steps might look like:\nLets see how we program this in the SPIKE App!",
+    "crumbs": [
+      "Lesson 2: Oomph! I found the Wall"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson2.html#wait-until-blocks",
+    "href": "spike-app/spike-lesson2.html#wait-until-blocks",
+    "title": "Lesson 2: Oomph! I found the Wall",
+    "section": "",
+    "text": "Wait Until blocks allow the robot to detect various kinds of input, or changes in what its sensors detect. With a Wait Until block, the robot will “wait until” a certain condition occurs. Then the next block in the program is the action to take.\nEach sensor in your MINDSTORMS SPIKE kit has a corresponding wait until block in the SPIKE App. You’ve already used one Wait Until block for the SPIKE brick buttons so you can better control when your program runs. Remember, this gives you time to disconnect the USB cable, if you are using it, and to prepare your work area for the robot to run.\nFigure 1 shows a wait until with the available sensor expressions. Don’t code this (the program is pointless), we’re just showing the available blocks.\n\n\n\n\n\n\n\nFigure 1: Available sensor expressions used with Wait Until blocks",
+    "crumbs": [
+      "Lesson 2: Oomph! I found the Wall"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson2.html#sound-block",
+    "href": "spike-app/spike-lesson2.html#sound-block",
+    "title": "Lesson 2: Oomph! I found the Wall",
+    "section": "Sound Block",
+    "text": "Sound Block\nYour robot can play sound with Sound blocks. Besides being fun and making your robot more interactive, they can be used as a debugging aid. You can place sound blocks in you program to help you determine what part of the program is running when you observe some unexpected behavior in the robot. We’ll use sound blocks in this exercise to understand the behavior of wait blocks.\nThe Sound block can play sound files or various beep tones. The play sound until done  will play a sound and the next block in your program will not run until the sound completes. start sound  will play a sound and run the next blocks in your program immediately. We recommend starting with a play sound until done block as with the start sound block you could easily play multiple sounds which could be confusing. Change to start sound if the pause in your program affects the robot’s behavior in a way you don’t like.\n\n\n\n\n\n\nNote\n\n\n\nThe SPIKE App plays sound files on the device that is running the App (e.g. your laptop, iPad, Chromebook, etc). The SPIKE brick itself is only able to play beeps. This means that to use sounds with your program, the SPIKE brick must be connected to SPIKE App.\nIf you are using the USB cable and your robot is programmed to move, use beeps instead of sounds to avoid having the USB cable stretched, tangled or damaged when running your program.\n\n\nBe considerate to others around you when playing sounds: start at a lower volume, and limit the number of sounds in the program. You might need to adjust the sound level, or turn the sound on on the robot to hear the sounds at the expected volume. Sound files are large: the first time you download your program you might notice a delay, and having many sound blocks means you can’t download as many programs to your SPIKE brick.",
+    "crumbs": [
+      "Lesson 2: Oomph! I found the Wall"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson2.html#force-sensor",
+    "href": "spike-app/spike-lesson2.html#force-sensor",
+    "title": "Lesson 2: Oomph! I found the Wall",
+    "section": "Force Sensor",
+    "text": "Force Sensor\nThe Force Sensor detects when the black tip is pressed (pushed in), hard pressed (pressed in farther), released (let go when it was already pressed) or pressed in a certain amount.\n\n\n\nSPIKE Force Sensor",
+    "crumbs": [
+      "Lesson 2: Oomph! I found the Wall"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson2.html#sensor-and-motor-ports-in-your-program",
+    "href": "spike-app/spike-lesson2.html#sensor-and-motor-ports-in-your-program",
+    "title": "Lesson 2: Oomph! I found the Wall",
+    "section": "Sensor and Motor Ports in your Program",
+    "text": "Sensor and Motor Ports in your Program\nWith your robot built, and motors and sensors plugged in, the default ports on the programming blocks in the SPIKE App will match. This will save you time when programming as you will not have to change the port selections in the programming blocks as much. If you connect your robot, and then disconnect and power it off, the SPIKE App will remember this last known configuration. And you won’t drain your SPIKE brick’s battery while you finish the program.\nJust remember that you might have to double check or change the programming ports in your program if the ports your motors or sensors are plugged into change, or if you created your program and never connected a robot (the defaults for most motors and sensors in that case change to A). Note that once you add a programming block to your programming canvas, the port selection will not change based on the robot configuration: you’ll have to manually change the program or change the ports the motor or sensor are plugged in to to make the program function as intended.",
+    "crumbs": [
+      "Lesson 2: Oomph! I found the Wall"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson2.html#programming-exercise",
+    "href": "spike-app/spike-lesson2.html#programming-exercise",
+    "title": "Lesson 2: Oomph! I found the Wall",
+    "section": "Programming Exercise",
+    "text": "Programming Exercise\nWe’ll use the sound block to observe the behavior of the wait until blocks.\nOpen the SPIKE App software, create a new project.\nAdd a play sound until done  to the start of your program.\nAdd a wait until  to your program, then add a force sensor is pressed  to it.\nAdd a second play sound block to the program, but play a different sound so you can tell it apart from the first sound block. To do this you’ll need to open the drop list for the sound, and then click add sound ... so you can add another sound.\n\n\n\n\n\nFirst time adding a new sound to the program.\n\n\n\n\n\n\nSelecting a sound from the library\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nYou can also record your own sounds and change the sound with effects. Do not spend much time trying that out. As the need arises you can revisit that in a later lesson. Its also likely you’ll have a lot of background noise in class so it will be hard get a clean recording.\n\n\n\n\nThe first sound will play, and the second sound will not play until you press the button on the front of the Force sensor. Debug your program and robot until it works as you expect.\nSave this program with a name “Wait with sound”. Connect the SPIKE brick, download and run the program. You should hear the sounds play one after the other once you press the force sensor.\n\n\n\n\nCompleted program with Force Sensor and playing sounds",
+    "crumbs": [
+      "Lesson 2: Oomph! I found the Wall"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson2.html#force-sensor-mounting-and-bumpers",
+    "href": "spike-app/spike-lesson2.html#force-sensor-mounting-and-bumpers",
+    "title": "Lesson 2: Oomph! I found the Wall",
+    "section": "Force Sensor Mounting and Bumpers",
+    "text": "Force Sensor Mounting and Bumpers\nMount the Force sensor to your robot. The kit instructions show one way to create a mount, and they include other options. You can also create a bumper in front of the Force sensor to make it work better. This increases the surface area of the button, which is small. With a bumper, the button will be easier to press when it encounters an obstacle or wall. The following images show two bumper ideas.\n\n\n\n\n\nForce sensor with mount and 36-tooth gear as a bumper\n\n\n\n\n\n\nHanging bumper",
+    "crumbs": [
+      "Lesson 2: Oomph! I found the Wall"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson2.html#programming-exercise-1",
+    "href": "spike-app/spike-lesson2.html#programming-exercise-1",
+    "title": "Lesson 2: Oomph! I found the Wall",
+    "section": "Programming Exercise",
+    "text": "Programming Exercise\nOne way to use a wait for touch block is to place it after a start moving  This will tell the robot to start moving, and keep moving until it bumps into something. Placing a stop moving  after the wait until block will tell the robot to stop moving when it does bump into something.\nDownload this program to the robot and run it. The robot should move forward and will stop when the Force sensor is pressed: you can press it with your hand to test the program. Then try it on an obstacle like a book or the wall.\n\n\n\nDrive until Force Sensor is pressed program",
+    "crumbs": [
+      "Lesson 2: Oomph! I found the Wall"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson2.html#looping",
+    "href": "spike-app/spike-lesson2.html#looping",
+    "title": "Lesson 2: Oomph! I found the Wall",
+    "section": "Looping",
+    "text": "Looping\n\n\nAt this point, we know how to combine Movement and Wait blocks to instruct the robot to drive until it hits a wall, then take an action. But what happens after that? The robot will go on to the next block in your program, which might be another move or wait block, but eventually it will run out of blocks and the program will end. If our goal is to make the robot search the room until it finds something, that won’t work if the program ends after hitting a wall!\nLooping makes the robot perform some action repeatedly. the SPIKE App has loops that let you repeat a set of blocks a specific number of times (loop until count), looping forever, or looping until a specific condition is met (such as a sensor input, or a variable is set to some value).\n\n\n\n\nLooping blocks",
+    "crumbs": [
+      "Lesson 2: Oomph! I found the Wall"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson2.html#programming-exercise-2",
+    "href": "spike-app/spike-lesson2.html#programming-exercise-2",
+    "title": "Lesson 2: Oomph! I found the Wall",
+    "section": "Programming Exercise",
+    "text": "Programming Exercise\nEnhance your “Wait with sound” program. Add a loop until count  around the other blocks in the program with a count of 2. Run the program and ensure you hear each sound block twice (remember to press the Force Sensor) before the program ends.",
+    "crumbs": [
+      "Lesson 2: Oomph! I found the Wall"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge2.html",
+    "href": "challenges/challenge2.html",
+    "title": "Challenge Project #2: A Maze, Repeatedly",
+    "section": "",
+    "text": "Objectives\nIntroduce using a Force Sensor to detect obstacles. By the end of this project, students will be able to:\nStudents should build a robot that can be instructed to travel through a maze and carries a Force Sensor positioned to find obstacles placed in front of the vehicle. Sample Force Sensor assemblies can be found in the manual contained in each kit, or the students may design their own.",
+    "crumbs": [
+      "Challenge Project #2: A Maze, Repeatedly"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge2.html#objectives",
+    "href": "challenges/challenge2.html#objectives",
+    "title": "Challenge Project #2: A Maze, Repeatedly",
+    "section": "",
+    "text": "Write a program to instruct the robot to perform an action once an obstacle is detected.\nPerform different actions based on the first and second times that the obstacle was detected.\nIf you have to repeat a turn, a loop might save you some coding (depending on how your maze or path is built).",
+    "crumbs": [
+      "Challenge Project #2: A Maze, Repeatedly"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge2.html#project-description",
+    "href": "challenges/challenge2.html#project-description",
+    "title": "Challenge Project #2: A Maze, Repeatedly",
+    "section": "Project Description",
+    "text": "Project Description\nNavigate through a simple maze, staying within given boundaries and detecting when a wall or other object is encountered.",
+    "crumbs": [
+      "Challenge Project #2: A Maze, Repeatedly"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge2.html#procedure",
+    "href": "challenges/challenge2.html#procedure",
+    "title": "Challenge Project #2: A Maze, Repeatedly",
+    "section": "Procedure",
+    "text": "Procedure\nProgram a robot to move forward to the top of the structure to the right. Instruct the machine to back up once it hits the wall and make a 90° left turn and move forward until it hits the second wall. The robot should then stop. Using the same program, the robot should be placed at varying starting distances from the wall.",
+    "crumbs": [
+      "Challenge Project #2: A Maze, Repeatedly"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson3.html",
+    "href": "spike-app/spike-lesson3.html",
+    "title": "Lesson 3: The Better to See You With (Kinda)",
+    "section": "",
+    "text": "Conditional Blocks\nLast session, we talked about decision making using the wait until and loop blocks. These blocks let us tell the robot to pause and keep repeating a set of actions until something happens, such as a touch sensor being bumped or repeating something a specific number of times. But what if we want the robot to take different actions based on what it senses or some other condition?\nLet’s build on the example from last session. Instead of the robot always turning right, we want it to turn different directions depending on what color it sees:\nIn order to make the sort of decision in step 3, we’ll need to use conditional blocks.\nLike the Loop block, conditional blocks are a special type of block that can contain other blocks, and accepts an expression that evaluates to true or false when your program runs. You’ve already used sensor expressions with wait until s. When the sensor detected the condition (e.g. you pressed the left brick button or the touch tensor) was true, we are done waiting and the program continues running the next block.\nWith an if/then , the blocks you add to ‘if’ part of the condition will run only when the expression evaluates to true. The if/then/else  works the same, except that the blocks in the ‘else’ part will run when the condition evaluates to false.",
+    "crumbs": [
+      "Lesson 3: The Better to See You With (Kinda)"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson3.html#conditional-blocks",
+    "href": "spike-app/spike-lesson3.html#conditional-blocks",
+    "title": "Lesson 3: The Better to See You With (Kinda)",
+    "section": "",
+    "text": "Conditional blocks",
+    "crumbs": [
+      "Lesson 3: The Better to See You With (Kinda)"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson3.html#color-sensor",
+    "href": "spike-app/spike-lesson3.html#color-sensor",
+    "title": "Lesson 3: The Better to See You With (Kinda)",
+    "section": "Color Sensor",
+    "text": "Color Sensor\n\n\n\nSPIKE Color Sensor\n\n\nThe Color sensor can identify and name a limited set of colors (the colors of certain LEGO bricks in your kit), measure the brightness of light around it, or to use its internal LED light to measure reflective intensity accurately. With this sensor your robot can “see” the world around it, at least in a very limited way.\nThe SPIKE Color sensor has two modes:\n\nColor mode: Sensor can detect LEGO brick colors only\nReflected Light mode: Sensor can detect objects next to it: it sees in gray-scale only, but this can be used to differentiate one color from another in many cases\n\n\n\n\n\n\n\nNote\n\n\n\nMost projects this season that use a Color Sensor will use the reflected light mode and related programming blocks. Our projects use materials that can be distinguished in this gray-scale mode.\n\n\nLike all sensors, the sensor plugs into one of the ports (A-F) on the SPIKE brick.\n\n\nWhen mounting the Color sensor on your robot to detect the color of a surface, mount it about between a half inch and three-quarters of an inch above the ground.\nAnother way to measure this is to take the smaller side of the 2x4 LEGO bricks in your kit. You can also check the readings on the Dashboard and try different heights to see what works best for your program. Too far away and the sensor will not work as you expect! See figure Figure 1.\n\n\n\n\n\n\n\nFigure 1: Color Sensor Height\n\n\n\n\n\n\n\n\n\n\n\nNoteSensor Exercise with SPIKE App\n\n\n\nAttach the Color sensor to your brick and view the brightness of surfaces around the room with the SPIKE App.\n\nAttach a wire from your Color sensor to a port on the intelligent brick.\nPower on your brick and connect it to the SPIKE App.\nOpen the Dashboard by clicking the{.spike-app-connected-icon-in-dashboard-overview}. You’ll see the connected motors and sensors.\n\n\n\nDashboard with color sensor in color mode\n\n\nClick the drop down next to the color sensor to change it from color mode to Reflected Light Intensity mode.\n\n\n\n\nChanging sensor mode in dashboard\n\n\n\n\n\nColor sensor in Reflected Light mode\n\n\n\nClose the Dashboard. You can also see the sensor values in the Dashboard Overview at the top of the programming canvas. You might need to click the greater than symbol (&gt;) to expand the Overview so you can see the sensor readings.\n\n\n\n\nColor sensor value in Dashboard overview\n\n\n\nPoint the sensor at various surfaces, such as the table top or a metal table leg or the ILEO whiteboard arena and tape lines. Which is most reflective? Make sure to hold the sensor very close but not quite touching the surface.",
+    "crumbs": [
+      "Lesson 3: The Better to See You With (Kinda)"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson3.html#programming-exercise",
+    "href": "spike-app/spike-lesson3.html#programming-exercise",
+    "title": "Lesson 3: The Better to See You With (Kinda)",
+    "section": "Programming Exercise",
+    "text": "Programming Exercise\nControl your robot with color. Attach a color sensor to your robot. Use an if/then  to detect when the color sensor detects green or blue. Move the robot forward or backward one rotation when it detects the color. The robot should not move unless green or blue are detected (or other LEGO brick colors from your kit).\nEven though the robot should only move when the Color sensor detects color, lets take some precautions just in case we have bugs in our program. Continue to add the wait until left pressed (condition)  to the beginning of your program.\nYour program will flow something like this:\n\n\n\nControl your robot with color\n\n\nThe program loops forever, and it repeatedly checks above will wait for 2 seconds, and then look at the touch sensor. If it sees that it’s pressed, the robot follows the top path and plays the first sound. Otherwise, it follows the bottom path and plays the second sound instead.\n\n\n\n\n\n\n\nNoteQuestion\n\n\n\nTypically with our lessons, we use wait until s with sensors. Why doesn’t that work here?",
+    "crumbs": [
+      "Lesson 3: The Better to See You With (Kinda)"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson3.html#troubleshooting-the-color-sensor",
+    "href": "spike-app/spike-lesson3.html#troubleshooting-the-color-sensor",
+    "title": "Lesson 3: The Better to See You With (Kinda)",
+    "section": "Troubleshooting the Color Sensor",
+    "text": "Troubleshooting the Color Sensor\nIf the reflected light values for the objects your robot detects are too close together, this can make your program malfunction. First check that the color sensor is properly mounted to the robot:\n\nIt is about 2 stacked pennies off the surface it is detecting.\nAmbient light in the room might affect sensor readings. Surrounding the end of the sensor with painters tape (or other opaque material) can help shield the sensor from lights elsewhere in the room.\nMake sure the sensor is secure and it or the robot base are not bouncing around as the robot moves, which leads to unreliable readings.\nSensor readings can vary slightly as your program runs. So allow for this in your program. Instead of checking for an exact value like 85, check for a range of values like greater than 75 and less than 95. It will be important that each object you try to identify with the sensor is different. If a green tape line reads around 85, and a blue tape line reads around 90, the program could mistake one color for the other.\n\nAs the lighting level can vary in different places, the readings from your Color sensor can vary. In the worst case you might have to change the intensity values you use in every condition or wait until block in your program that uses the color sensor. With calibration, you should only need to change those two blocks and the values used by the rest of the program should remain (though not guaranteed). Using variables for the important color values is another way to make your program easier to adjust. We discuss variables in later lessons.\nSPIKE App does not offer any calibration options as in previous MINDSTORMS programming software. Some math could be performed to manually perform calibration and potentially improve the readings you receive. This will be covered in a separate document named “Calibration”.",
+    "crumbs": [
+      "Lesson 3: The Better to See You With (Kinda)"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge3.html",
+    "href": "challenges/challenge3.html",
+    "title": "Challenge Project #3: A Moth to a Flame",
+    "section": "",
+    "text": "Objectives\nStudents will learn to utilize the Color sensor and repeat loops to instruct a robot to find a light source.",
+    "crumbs": [
+      "Challenge Project #3: A Moth to a Flame"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge3.html#setup",
+    "href": "challenges/challenge3.html#setup",
+    "title": "Challenge Project #3: A Moth to a Flame",
+    "section": "Setup",
+    "text": "Setup\nAdd a Color Sensor to the vehicle using either the method described in the manual or designing a new attachment. The Color Sensor should point out, rather than down at the floor.",
+    "crumbs": [
+      "Challenge Project #3: A Moth to a Flame"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge3.html#project-description",
+    "href": "challenges/challenge3.html#project-description",
+    "title": "Challenge Project #3: A Moth to a Flame",
+    "section": "Project Description",
+    "text": "Project Description\n\n\n\nThe robot should rotate in a circle until it finds a 2x4 LEGO brick. Once it detects the brick, the robot should move forward towards the brick. If the brick is removed from the sensor, the robot should resume rotation, and repeat the process.\nNote the brick will have to be very near the sensor for it to be detected. You might want to slow your robot’s rotation to give it a better chance to detect the brick. You might also want to mount the 2x4 brick on an axle/stick to make it easier to manipulate (think a marshmallow over a campfire).\n\n\n\n\nSPIKE marshmallow\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nThis exercise was designed for NXT and EV3 robots whose light sensors are able to detect light from a flashlight. The SPIKE color sensor doesn’t detect ambient light so the interaction with the robot is a little harder here.\n\n\n\nAdditional Challenges\n\nDescribe in a general manner the types of problems that your program will solve.",
+    "crumbs": [
+      "Challenge Project #3: A Moth to a Flame"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge4.html",
+    "href": "challenges/challenge4.html",
+    "title": "Challenge Project #4: Robo-Patrol",
+    "section": "",
+    "text": "Objectives\nStudents will learn to utilize the Color sensor and repeat loops to instruct a robot to detect a dark line on a light surface.",
+    "crumbs": [
+      "Challenge Project #4: Robo-Patrol"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge4.html#setup",
+    "href": "challenges/challenge4.html#setup",
+    "title": "Challenge Project #4: Robo-Patrol",
+    "section": "Setup",
+    "text": "Setup\nAdd a light sensor to the vehicle using either the method described in the manual or designing a new attachment. The Color sensor should point down at the floor. For best results the sensor should be raised above the surface, but not very much: the height of about 2 stacked pennies is recommended.",
+    "crumbs": [
+      "Challenge Project #4: Robo-Patrol"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge4.html#additional-materials-needed",
+    "href": "challenges/challenge4.html#additional-materials-needed",
+    "title": "Challenge Project #4: Robo-Patrol",
+    "section": "Additional materials needed",
+    "text": "Additional materials needed\nAn arena whose surface is light colored, with boundaries made up of dark lines (marker, tape).\n\n\n\nRobo-patrol arena",
+    "crumbs": [
+      "Challenge Project #4: Robo-Patrol"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge4.html#project-description",
+    "href": "challenges/challenge4.html#project-description",
+    "title": "Challenge Project #4: Robo-Patrol",
+    "section": "Project Description",
+    "text": "Project Description\nThe robot will patrol the search area defined by the dark line. It will move in some direction. When it detects the dark line, it should stop, change direction and then repeat. The robot should not leave the confines of the search area.\n\n\n\n\n\n\nTip\n\n\n\n\nThe robot should not be moving too fast so it misses the line.\nEnsure that the turn does not position the sensor outside of the line.\nUse reflected light mode for detecting lines. Color mode is calibrated to LEGO brick colors and not to tape line colors. Color mode unless used with LEGO brick will not work under all lighting conditions.\n\n\n\n\nAdditional Challenges\n\nCan you program the robot so it covers the entire patrol area in a predictable and reliable way?\nCan you speed up the search yet keep the robot inside the patrol area reliably?",
+    "crumbs": [
+      "Challenge Project #4: Robo-Patrol"
+    ]
+  },
+  {
+    "objectID": "lesson4.html",
+    "href": "lesson4.html",
+    "title": "Lesson 4: Sonic Sight",
+    "section": "",
+    "text": "The Distance Sensor\nWhat does the sonar used by boats and submarines, and echolocation used by bats have in common? Both help the robot navigate or detect objects in its surroundings without relying on light to see.\nBoth sonar and echolocation use pulses of sound. By sending out a short “ping” and listening for the echo, they can tell how far away objects are. The longer the distance, the more time it takes for the sound to bounce back.\nThe distance sensor included in your LEGO® Education SPIKE™ kit works like a very simple sonar. It sends out a ping (a sound that is too high-pitched for humans to hear) and listens for the echo to figure out how far away objects are in front of it.\nLike the touch and light sensors, it can be used as an expression in conditional, wait, or other blocks in your program. For example:\nwait until is distance with ultrasonic sensor",
+    "crumbs": [
+      "Lesson 4: Sonic Sight"
+    ]
+  },
+  {
+    "objectID": "lesson4.html#the-distance-sensor",
+    "href": "lesson4.html#the-distance-sensor",
+    "title": "Lesson 4: Sonic Sight",
+    "section": "",
+    "text": "Distance (Ultrasonic) Sensor",
+    "crumbs": [
+      "Lesson 4: Sonic Sight"
+    ]
+  },
+  {
+    "objectID": "lesson4.html#sensor-exercise",
+    "href": "lesson4.html#sensor-exercise",
+    "title": "Lesson 4: Sonic Sight",
+    "section": "Sensor Exercise",
+    "text": "Sensor Exercise\nFind the distance to various objects around the room.\nAs you did in the light sensor exercise, you can see sensor values in the Dashboard and Dashboard Overview in the SPIKE App. Connect the SPIKE brick to the computer, then use the Dashboard to change the distance unit from centimeters to inches, if desired.\n\nTry pointing the sensor at objects at various distances. How accurate is it? What is the maximum distance the sensor can see?\nPoint the sensor at heavy fabric, like a chair back or a coat. What happens?\n\n\n\n\nViewing distance sensor readings in SPIKE Dashboard Overview\n\n\n\n\n\n\n\n\nCaution\n\n\n\nIf multiple teams are using distance sensors in the same room, they can interfere with each other. Keep a wall or other divider between robots to avoid this.",
+    "crumbs": [
+      "Lesson 4: Sonic Sight"
+    ]
+  },
+  {
+    "objectID": "lesson4.html#events",
+    "href": "lesson4.html#events",
+    "title": "Lesson 4: Sonic Sight",
+    "section": "Events",
+    "text": "Events\nCertain programming tasks can be coded with events. When the program detects a condition, some code can run to handle the event. Typically, the main part of your program runs under the following block and performs the most important tasks.\nwhen program starts \n\n\n\n\n\nEvent blocks\n\n\n\nEvent blocks can perform actions that are less important or can happen at unpredictable times. Both apps call an event block and the blocks that handle it a “stack.”\nFor some programs, events work better than loops with conditions or wait until blocks. Events are a common programming technique in other systems and programming languages. Variables may help coordinate tasks across events.\n\n\n\n\n\n\nCaution\n\n\n\nA common source of programming errors with events is trying to operate the same motor or sensor in multiple event stacks. Operate different motors, or coordinate the stacks with variables or a stop-moving block such as:\nstop moving",
+    "crumbs": [
+      "Lesson 4: Sonic Sight"
+    ]
+  },
+  {
+    "objectID": "lesson4.html#programming-exercise",
+    "href": "lesson4.html#programming-exercise",
+    "title": "Lesson 4: Sonic Sight",
+    "section": "Programming Exercise",
+    "text": "Programming Exercise\nCreate a security robot that scans an empty area for intruders. The main program will rotate the robot periodically. Event blocks triggered by an object being detected by the ultrasonic sensor will trigger an alarm. The alarm will stop when the object is no longer detected.\n\nAttach the ultrasonic/distance sensor to the front of your robot. The sensor should face forward. To avoid false alarms, do not mount the sensor too close to the floor.\nCreate the following program. Because this is a movement program, include our typical wait until left pressed condition at the beginning of the program. \n\nTo create the is_alert variable, scroll to the Variables area, which should be empty.\nClick the Make a Variable button. A dialog will ask for the variable name. Enter is_alert.\nClick the OK button. Blocks to use and change is_alert will appear in the Variables area. Use 0 and 1 to represent false and true.\nCode the rest of the program. When the distance sensor detects an object, start an alarm. When the object moves away, stop the alarm.\n\nClear the work area around the robot, connect your robot to the SPIKE App, and run the program.\n\n\n\n\nSecurity robot using events\n\n\n\n\n\n\n\n\nNoteQuestions\n\n\n\n\nThe event handler uses a stop-all-sounds block to disable the alarm. If that stops sounds, do we really need the is_alert variable?\nIf the “secure area” were a real room, how would we modify the program to prevent false alarms?\nCould we make this program work without events, using wait, looping, and conditional blocks? How would its behavior differ?\nThe alarm is armed when the program starts, before you press the left button to allow the robot to move. How could we make the alarm active after that button press without adding another wait-until block?",
+    "crumbs": [
+      "Lesson 4: Sonic Sight"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge5.html",
+    "href": "challenges/challenge5.html",
+    "title": "Challenge Project #5: Sonic Parking",
+    "section": "",
+    "text": "Procedure\nProgram a robot to move forward and stop three inches from the wall, stack of books, etc. You can use any kind of programming block that uses the distance sensor to accomplish this.",
+    "crumbs": [
+      "Challenge Project #5: Sonic Parking"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge5.html#objectives",
+    "href": "challenges/challenge5.html#objectives",
+    "title": "Challenge Project #5: Sonic Parking",
+    "section": "Objectives",
+    "text": "Objectives\nIntroduce using the ultrasonic/distance sensor. By the end of this project, students will be able to:\n\nUtilize an ultrasound sensor to detect obstacles prior to impact.\nExplain how a collision prevention system might work.",
+    "crumbs": [
+      "Challenge Project #5: Sonic Parking"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge5.html#setup",
+    "href": "challenges/challenge5.html#setup",
+    "title": "Challenge Project #5: Sonic Parking",
+    "section": "Setup",
+    "text": "Setup\nAdd an ultrasound sensor to the robot vehicle that can sense obstacles in front.",
+    "crumbs": [
+      "Challenge Project #5: Sonic Parking"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge5.html#project-description",
+    "href": "challenges/challenge5.html#project-description",
+    "title": "Challenge Project #5: Sonic Parking",
+    "section": "Project Description",
+    "text": "Project Description\nUse the ultrasound sensor to park the robot vehicle.",
+    "crumbs": [
+      "Challenge Project #5: Sonic Parking"
+    ]
+  },
+  {
+    "objectID": "challenges/challenge5.html#procedure",
+    "href": "challenges/challenge5.html#procedure",
+    "title": "Challenge Project #5: Sonic Parking",
+    "section": "",
+    "text": "Tip\n\n\n\nExperiment with the distance sensor to see what the limitations of the sensor are. Determine the range that the robot can detect.\n\n\n\nAdditional Challenges\n\nTry writing a version of this program with event blocks.\nHave a partner stand in front of the robot with his/her legs together. Instruct the robot to move forward until the robot is approximately 12 inches in front of the partner. When the partner backs up, the robot should move to maintain the 12 inch gap. If the partner should move forward (with a distance of less than 12 inches), the robot should back up to maintain the 12 inch gap.\nChange the robot so that it can back into the “parking spot” instead of driving forward into it.\nWhat happens when the robot gets too close to the wall (less than one inch)?\nModify the robot so that the ultrasound sensor points down. Check the limitations of the sensor before proceeding further. Get a small stack of books (4-6 inches high), and program the robot so that it drives forward, detects the edge, and stops before falling off the stack of books. Once the program works, test it (carefully) by putting it on a desk or table.",
+    "crumbs": [
+      "Challenge Project #5: Sonic Parking"
+    ]
+  },
+  {
+    "objectID": "lesson5.html",
+    "href": "lesson5.html",
+    "title": "Lesson 5: Smarter Programming with data",
+    "section": "",
+    "text": "Sensor Debugging\nUp to this point, the blocks we placed have been self-contained. The values we set in the block’s control panel controlled everything about how the block behaves. What if we instead want to change the block’s behavior as the program runs? Variables let us do this.\nWe’ve used sensor expression blocks with wait until  blocks before, but other blocks like conditional and display blocks can also use them as input. We’ve also displayed sensor values using the Dashboard and Dashboard Overview, but this requires that you connect the SPIKE Intelligent brick to the SPIKE App. With the techniques here, you’ll be able to see the sensor data on the SPIKE Intelligent brick display which might be more convenient to debug certain problems.",
+    "crumbs": [
+      "Lesson 5: Smarter Programming with data"
+    ]
+  },
+  {
+    "objectID": "lesson5.html#programming-exercise-1",
+    "href": "lesson5.html#programming-exercise-1",
+    "title": "Lesson 5: Smarter Programming with data",
+    "section": "Programming Exercise 1",
+    "text": "Programming Exercise 1\nLet’s create a program that will display the values from the Distance sensor on the SPIKE brick’s display. This can be useful later when you are working on programs. Admittedly, the SPIKE display is less capable than other MINDSTORMS robots, but we can still print text and numbers to be useful in a pinch.\n\nAdd a repeat forever  to your program.\nAdd a light matrix write .\nIn the light matrix write block, add a ultrasonic sensor distance expression . Now the display will show the distance reading from the sensor.\nAdd a wait for seconds . This will make it easier for you to read the value on the screen and limit the flashing on the screen (though you might not notice until you write additional data to the display).\n\n\n\n\nDisplaying sensor readings on the SPIKE LED display",
+    "crumbs": [
+      "Lesson 5: Smarter Programming with data"
+    ]
+  },
+  {
+    "objectID": "lesson5.html#programming-exercise-2",
+    "href": "lesson5.html#programming-exercise-2",
+    "title": "Lesson 5: Smarter Programming with data",
+    "section": "Programming Exercise 2",
+    "text": "Programming Exercise 2\nCreate a program to make the robot slow down more and more as it gets closer to a wall.\nTo solve this, we will need a movement block to control our motors, and a Distance (Ultrasonic) sensor to find our distance to an obstacle/wall. The movement block will use the distance sensor’s value to change its power, slowing it down as the distance to the obstacle/wall gets smaller.\n\n\n\n\nSetup the program for movement as you normally would.\nThe main body of this program is a loop with a set movement speed to  and a start moving . You must place the start-moving block here so it uses the speed adjustments.\n\nRemember that the pink movement blocks control two motors at once, so this set movement speed block affects both drive motors of your robot.\n\nTest your program. Find an open space on the floor and aim your robot toward a wall that’s at least a few feet away. Be ready to catch and stop the robot if it misbehaves! Your program should look like this.\n\n\n\nSlower towards obstacle/wall\n\n\n\nIf there were no obstacles in front of your robot, it will probably speed away at close to full power. The Distance sensor detects a maximum distance of 100 inches (or 255 centimeters). We are feeding that number directly into the power setting on the move block, setting it to 100% power. Each loop, it will re-read the distance and update the movement speed.\n\n\n\n\n\n\n\nNote❓ Questions\n\n\n\n\nHow close does your robot get to the wall before stopping (if it stops)? Why?\nWhat is the behavior when the sensor is covered up completely by the wall?\nHow is the behavior different if you change the distance unit to centimeters?\nHow small of a power level can you send to the move block before the robot stops? Add or change the Math blocks in the above program so that your robot sends that power level when 12 inches from the wall.",
+    "crumbs": [
+      "Lesson 5: Smarter Programming with data"
+    ]
+  },
+  {
+    "objectID": "lesson5.html#programming-challenge",
+    "href": "lesson5.html#programming-challenge",
+    "title": "Lesson 5: Smarter Programming with data",
+    "section": "Programming Challenge",
+    "text": "Programming Challenge\nAdjust your program to make your robot stop within 12 inches of the obstacle/wall. The robot should stop well before it comes into contact with the obstacle/wall.",
+    "crumbs": [
+      "Lesson 5: Smarter Programming with data"
+    ]
+  },
+  {
+    "objectID": "lesson6.html",
+    "href": "lesson6.html",
+    "title": "Lesson 6: Guess the Hand game",
+    "section": "",
+    "text": "Variables and Lists\nIn this lesson we’ll implement a simple game with your robot. This program is a little more complicated than previous lessons as it will tie together some concepts and programming blocks that we only worked with briefly before. This will also work with some common difficulties in working with the MINDSTORMS robots and programs. And we’ll introduce My Blocks, which help you reuse code and create more compact and readable programs. This lesson should help you write more complex programs for other projects.\nWe’ll implement a guess the hand game you probably played as a kid. A friend would hide a coin in one hand, and you would tap the hand you thought the coin is in. If you guessed correctly, maybe you got to keep the coin!\nOur robot has no hands or coins. Instead, we’ll use Force Sensors or buttons on the SPIKE Intelligent brick to represent a left and right hand. Your player will press one of those sensors or buttons to make their guess. Your program will randomly pick one side or the other to be the one that has the “coin” in it, and it will report back to the player if they guessed correctly. In fact, this is a two-player game: the first player to five correct guesses wins!\nWe used a variable to coordinate events in a previous exercise, but we’ll give a more complete definition here. A variable has a descriptive name and a value. You provide the name like score to hold the value, which would be the player’s current game score. What makes variables useful is that their value can change. In gaming, the score changes as you play (e.g. you slash fruit, beat the boss, or gobble up ghosts), so the program would update the value for a variable named score to the new score every time you do something to gain points.\nYou can rename variables when you change your program, maybe you think of a more descriptive name or maybe you change how the variable is used and the old name doesn’t make sense. the SPIKE App will also change any usages of this variable to the new name throughout your program. The name of the variable will not change while your program is running on the SPIKE Intelligent brick though, only the value changes. You can also delete variables from your program and the SPIKE App will first check if the variables is still being used in the program. If desired, you can then delete all the blocks that use the variable, or decide not to delete the variable.\nYou can also name variables to give hints as to their use. is_correct_guess is a boolean because of the is_ hint in the name. You might add num to a number variable, or txt or str (other programming languages call text strings). Then you might be able to spot bugs in your program when it uses the wrong kind of data with a variable.\nBesides storing data like the score or player name, variables let you customize the behavior of the program because the robot can remember things. Let’s say we are working with the Robo-Patrol challenge project. We could modify that program so that the robot stops on the second line it detects. We would add a variable named found_line, initialize its variable to zero (meaning false, and that it has not found any lines yet) at the start of the program. When we detect a line, and found_line is still 0, we change found_line to 1 (true). Then the next time we detect a line, found_line will be 1 and we can make the robot stop or do something else.\nLists make it more convenient to store and work with multiple pieces of related data. We say the list stores “items”, which is a number or string in the SPIKE App. Sometimes you could use multiple variables, with similar names. But that still limits you. If we defined variables to keep track of maximum scores named player_score_1, player_score_2, player_score_3, our program could only remember the three highest scores. If we used a list called player_scores, we could store and remember a nearly unlimited number of scores (our robot has only so much memory to store data).\nThe high scores list would have several items. Let’s say we’ve played the game five times with scores 256, 1024, 64, 16, 1701.\nThen we could access each score by its index using the\nitem of list\nblock. In a real program we would also sort the scores by writing some additional code.\nThe “Guess the Hand” program will use a list to keep track of each player’s current score: the score at index 1 will be player 1’s score, and index 2 will be player 2’s score. “Guess the Hand” will not remember the maximum scores, since 5 is always the max score, and the program will stop when a player wins.\nIn Table 2, player 1 has a score of 2 and player 2 has a score of 5, which means player 2 just won the game.\nLists also have a length that expressions in your program can use. The first Table 2 has a length of 5 because it currently stores the top five scores. The second Table 2 has a length of 2 because it stores the scores of two players.",
+    "crumbs": [
+      "Lesson 6: Guess the Hand game"
+    ]
+  },
+  {
+    "objectID": "lesson6.html#variables-and-lists",
+    "href": "lesson6.html#variables-and-lists",
+    "title": "Lesson 6: Guess the Hand game",
+    "section": "",
+    "text": "Table 1: Sample player_scores list\n\n\n\n\n\nIndex\nValue\n\n\n\n\n1\n256\n\n\n2\n1024\n\n\n3\n64\n\n\n4\n16\n\n\n5\n1701\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTable 2: Sample player_scores list in Guess the Hand\n\n\n\n\n\nIndex (Player number)\nValue(Player Score)\n\n\n\n\n1\n2\n\n\n2\n5\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nYour programs should always have blocks to initialize all variables to known values at the beginning of the program. We call this ‘explicit initialization’. For text this might be a specific value, or it might be no value, which other programming languages call an empty string. For numbers, zero or one is typical, or some other value that makes sense in your program.\nLists should also be initialized with\n\n\n\nadd item to list , or emptied with a delete all list items .\n\nSome programming languages have the concept of null or None, meaning the variable has no value, or the list does not exist. the SPIKE App variables will always have a value, and lists will also be empty or contain other items. The closest thing the SPIKE App has is empty text (a text variable that has no letter, numbers or symbols in it).\n\n\n\n\n\n\n\n\n\n\nCaution\n\n\n\nThis is especially true with the SPIKE App. The variables view allows you to add list values, and it also seems to remember list values from the last time the program ran. Sometimes this might be useful, but for most programs this will cause problems. Make sure to clear and initialize lists at the start of your program.\n\n\n\n\nData Types\nLike most programming languages you’ll encounter, the SPIKE App supports a number of data types. Each variable or expression in the SPIKE App has a specific data type at any given time in a program.\n\nBoolean: A value meaning True or False. In the SPIKE App these are only available as expressions, the blocks with the pointy ends, such as ultrasonic sensor distance expression . We’ll use the numbers 0 for false and 1 for true and boolean expressions that check for equality.\nNumber: Numbers, values read from sensors, counts, etc.\nText: Anything you can type from a keyboard, usually words, like 'LEGO'. Sometimes numbers are used as text in programs also, like 'Star Wars Episode 4' or '123'.\n\nIn the SPIKE App, numbers and text can be used somewhat interchangeably. However, we’ll get strange results if we try to do math on with numbers and text, such as with an  add . \n\nLists: A sequence of numbers or string, as we’ve already discussed. For example\n\nhigh scores in a video game ( [ 42000, 1701, 4815162342, 98409, 5618 ] )\nnames of your friends [ 'Monica Geller', 'Rachel Green', 'Chandler Bing', 'Phoebe Buffay', 'Joey Tribbiani', 'Ross Geller ]`.\nLists might also contain a single item [ 'Only me' ], or be empty [ ].\nMany programming languages use square brackets to represent lists or arrays, so we’re borrowing that here. In the SPIKE App, you’ll typically use a block to add one item to a list at a time.\n\n\nSome programming languages are “strongly typed” (Java, C++). This means at every variable in the program has a specific data type, which does not change for the entire program. So a text value cannot be assigned to a number. A number can be assigned to text, but the number must be converted from its numerical format inside the computer (e.g. the number 256 is converted to text containing characters 2, 5, and 6). Programs must specify the data type of every variable it uses.\nOther languages (Python, Javascript) are “loosely typed”. This means that a variable can contain any data type, or the data type it holds on to can change. This can make certain programs more flexible and easier to write, but can be a source of bugs.\nPrograms in the SPIKE App somewhere in between: mostly loosely typed but has some strongly typed behavior. It distinguishes between lists and other variables. So a variable can be text or a number, but it can’t be a list. Lists can contain a combination of text, but a list is always a list of zero or more items.",
+    "crumbs": [
+      "Lesson 6: Guess the Hand game"
+    ]
+  },
+  {
+    "objectID": "lesson6.html#my-blocks",
+    "href": "lesson6.html#my-blocks",
+    "title": "Lesson 6: Guess the Hand game",
+    "section": "My Blocks",
+    "text": "My Blocks\nMost programming languages have ways to allow code to be reused. My blocks are how we reuse code in the SPIKE App (other programming languages call this a method, procedure or function). For some of these lessons, it’s likely you have had to repeat the same, or very similar code in a program. A my block should perform a specific, well-defined task.\nFor instance, in our maze program you figured out how to make a left or right turn with your robot. If you make more than one left or right hand turn to get through the maze, you repeated those blocks for the turn in different places in your program. We could have used a my block to contain the code for the turns. We could code a my block for left turn and another for right turn, writing the code for each turn once. Then we could use this code (or “call” is the term in most programming languages) as many times as needed to get through the maze.\nIn fact, we could implement a single my block for turns, and use an input (which works like a variable) to tell the my block we want to make a left or right turn.\nThis code reuse can save you time in coding your programs as you don’t have to write the same code multiple times. It will also reduce the size of your program and make it easier to move around the programming canvas.\nMy blocks can also make your programs more readable/easier to understand. It might take many blocks to implement a turn (e.g. the movement itself, setting the motor speed, etc). By putting this code in a my block, a block named turn_left makes it more clear what the program is doing versus a set of movement blocks. However, my blocks can have the opposite effect if you give them poor names, or a my block tries to do many things, or there are many my blocks that are too specific. So you’ll need to find a balance in the number of my blocks and their content for your program. Also, don’t be afraid to change your code as your needs change: it might make sense to combine my blocks, split one up into several, move code from one my block to another, or not use a my block depending on what you think is best for your program. This is all part of the normal work that programmers do in engineering and improving their programs.\nGuess the Hand will define several my blocks so you’ll get some practice at this.",
+    "crumbs": [
+      "Lesson 6: Guess the Hand game"
+    ]
+  },
+  {
+    "objectID": "lesson6.html#game-design",
+    "href": "lesson6.html#game-design",
+    "title": "Lesson 6: Guess the Hand game",
+    "section": "Game Design",
+    "text": "Game Design\nProgrammers sometimes use “pseudo code” (fake code) to design a program or help explain it to other programmers. pseudo code is a simplified or much less detailed version of real code or maybe just a written explanation, sometimes using the same terminology. A computer would not understand pseudo code, its mean to help humans. The pseudo code below will help explain the function of the program in words, and we’ll build the actual block program code in the next sections.\n\n\n\n\n\n\nNotePseudo code for “Guess the Hand”\n\n\n\n\nInitializes all variables and lists\n\nPlayer 1 will start the game\nScores start at zero\n\nDo the following repeatedly: this is the “game loop”\n\nPick a random “hand” to store the coin\nDisplay something on the screen asking the current player to guess a hand\nWait for the user’s guess: Force Sensor presses or button clicks\nCheck the guess\n\nIf the guess is correct, give the player a point and play a cheerful sound\nIf the guess is not correct, play a disappointing sound: the player’s score remains the same\n\nIf the player now has five points, stop the game loop\nOtherwise choose the next player (if current player was player 1, player 2 goes and vice versa) and resume the game loop.\n\nIf we get here a player has scored 5 points and has won\n\nShow a message stating which player has won\nPlay a “game over” sound\nWait for a while so the players can read the message\nStop the program\n\n\n\n\nWe’ll follow this pseudo code as we build the program next.",
+    "crumbs": [
+      "Lesson 6: Guess the Hand game"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson6-impl.html",
+    "href": "spike-app/spike-lesson6-impl.html",
+    "title": "Coding the Guess the Hand game",
+    "section": "",
+    "text": "My blocks\nDefine the following my blocks: we’ll fill in the code for each in later steps. The start stack will call this first set of my blocks.\nThe my blocks above will call these my blocks to implement various game functions:\nCreate the my blocks and code your startup stack. To create a my block, click the Make a Block button in the brick palette. A dialog will appear where you can choose a name for the block (always use a descriptive name for what the code will do).\nFor most of the blocks here, you only need to type in the names provided in this lesson by typing over block name and click SAVE. Repeat this for each of the my blocks here.\nThe only my block that is different is show_guess_result. It will take an input (also called a “parameter”). An input to a my block is like a variable, that it will use to show either a success message and sound, or a failure message and sound. To define the input, click the Add an input button. Then set the name of the parameter to is_correct. We’ll show how is_correct is used when we add code to the my block later.\nCreate the my blocks as shown.\nYour programming canvas will look different as the my block stacks will added in a jumbled order. You can right click or long click on the programming canvas and select Clean up Blocks and it will arrange things better. You’ll still want to move the blocks to make room for adding code to the stacks as you implement each one.\nThe app displays blocks related to each my block in two places:",
+    "crumbs": [
+      "Coding the Guess the Hand game"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson6-impl.html#programming-exercise",
+    "href": "spike-app/spike-lesson6-impl.html#programming-exercise",
+    "title": "Coding the Guess the Hand game",
+    "section": "Programming Exercise",
+    "text": "Programming Exercise\nLet’s code the Guess the Hand game, step by step. Follow the instructions closely and code the game as indicated so you can follow later steps in this lesson that make changes. It is ok to change variable or my block names slightly so they are easier to type. E.g. Underscores (_) are harder to type on iPad than dashes (-), but don’t change the names too much so you can still follow the lesson easily.",
+    "crumbs": [
+      "Coding the Guess the Hand game"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson6-impl.html#play-time",
+    "href": "spike-app/spike-lesson6-impl.html#play-time",
+    "title": "Coding the Guess the Hand game",
+    "section": "Play Time",
+    "text": "Play Time\nTake some time to play the game. Watch for any problems and make fixes so the program appears as shown at the end of the previous exercise.",
+    "crumbs": [
+      "Coding the Guess the Hand game"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson6-impl.html#improving-the-game",
+    "href": "spike-app/spike-lesson6-impl.html#improving-the-game",
+    "title": "Coding the Guess the Hand game",
+    "section": "Improving the Game",
+    "text": "Improving the Game\nThe game as coded is fun and functional, but it has areas for improvement.\n\n\n\n\n\n\nNoteProgramming Challenge\n\n\n\nPlayer 1 has a slight advantage as they are always first to guess. Let’s change the program so Player 2 sometimes gets a chance to guess first.\n\nDefine a My Block named select_random_player.\nThis my block will pick a random number between 1 and 2, the player number who gets to start the game.\nAssign that value to the player_num variable.\nAdd a call to select_random_player to your when program starts stack, after the call to initialize_variables.\n\n\n\nYou may have noticed, or will be surprised by, that it is possible for a player to cheat the game.\n\n\n\n\n\n\nNoteBug Hunt\n\n\n\n\nFind out what the cheat is.\nLook at the code and try to figure out why the program allows cheating to occur.\n\n\n\nAnother problem is that the program depends on a tight “spin loop” where it checks if a guess has occurred. While this works, loops like this can consume a lot of processing and battery power due to the checking the condition hundreds or thousands of times per second. This is similar to how annoyed adults get when a young child (or maybe you) asks them during a car trip “are we there yet?” over and over. The adult might have a hard time paying attention to the road to deal with the questions, or they’ll get tired of answering repeatedly. A spin loop is like that annoying, but adorable, child and its a common cause of programs being slow or inefficient.\n\n\n\n\n\n\nNoteProgramming Challenge\n\n\n\nLet’s work on fixing the cheating and performance problem in this code.\n\nAdd some code in the check_guess loop to determine if the player cheated. Indicate that the program detected a cheat by displaying something, using a light, playing a sound, etc. For now, let the cheater get the point, we’ll fix that in a later step.\nSo we should avoid spin loops. The one second delay in our loop helps a bit. But in this case it actually helps allow a player to cheat as well. Try changing the “spin loop” to a wait block to detect when a player has made their guess.\n\nThis should reduce the occurrences of cheating, but it will not prevent it. Why does this improve things?\n\nAdd more code to prevent cheating. There are a couple of ways to do this, but you’ll probably start by adding code in check_guess. We could abort the program when it detects the cheat, but we want the game to continue and not give the cheating user that point (you can even deduct points if you want).",
+    "crumbs": [
+      "Coding the Guess the Hand game"
+    ]
+  },
+  {
+    "objectID": "spike-app/spike-lesson6-impl.html#bonus-challenges",
+    "href": "spike-app/spike-lesson6-impl.html#bonus-challenges",
+    "title": "Coding the Guess the Hand game",
+    "section": "Bonus Challenges",
+    "text": "Bonus Challenges\nAt this point, you should have a fun and fair game to play with your friends. If you have time, here are some other enhancements you can make to the program. You may implement these in whatever order interests you.\n\nChange the program to be easier to use by showing the score for both players on the guess screen. That way players don’t have to keep track of their score in their heads.\nChange the program to support more than two players (Hint: the program is already coded for this, you’ll need to make a simple tweak, unless you’ve significantly changed the program in previous steps. This demonstrates the power of using data structures like lists.)\nCurrently, the program uses the is_port_1_guess and is_port_2_guess variables to track the player’s guess. Replace both of these variables with a list of two items.\n\nHow does this simplify (or complicate) the game program?\n\nInstead of exiting the game, ask the players if they want to play again. Add code to restart the game. You’ll need to clear the old scores, choose a player to go first (either randomly again, or maybe start with the player that lost).\n\nAfter you get this working, add a new variable to keep track of the number of rounds each player has won. Stop the game when a player wins 3 rounds.\n\nChange the winning rules so that a player has to win by at least two points.\nThe lesson discussed that you can split check_guess into more my blocks or implement it in different ways. Do you agree with the author that this is the best way? Try some different implementations and see if you can find a better way, or figure out why the author came to this conclusion.",
+    "crumbs": [
+      "Coding the Guess the Hand game"
+    ]
+  },
+  {
+    "objectID": "bonus/bonus1.html",
+    "href": "bonus/bonus1.html",
+    "title": "Bonus Project #1: Sweeper",
+    "section": "",
+    "text": "Objectives\nBy the end of this project, the robot will be able to:",
+    "crumbs": [
+      "Bonus Project #1: Sweeper"
+    ]
+  },
+  {
+    "objectID": "bonus/bonus1.html#objectives",
+    "href": "bonus/bonus1.html#objectives",
+    "title": "Bonus Project #1: Sweeper",
+    "section": "",
+    "text": "Utilize an ultrasound sensor to prevent the robot from falling off the edge of a table.\nUse a sweeper attachment (student-created) to clear spare LEGO® blocks off the table.",
+    "crumbs": [
+      "Bonus Project #1: Sweeper"
+    ]
+  },
+  {
+    "objectID": "bonus/bonus1.html#setup",
+    "href": "bonus/bonus1.html#setup",
+    "title": "Bonus Project #1: Sweeper",
+    "section": "Setup",
+    "text": "Setup\n\nAdd an ultrasound sensor to the robot vehicle that points down.\nAdd a sweeper attachment that can be used to push blocks in front of the robot.",
+    "crumbs": [
+      "Bonus Project #1: Sweeper"
+    ]
+  },
+  {
+    "objectID": "bonus/bonus1.html#project-description",
+    "href": "bonus/bonus1.html#project-description",
+    "title": "Bonus Project #1: Sweeper",
+    "section": "Project Description",
+    "text": "Project Description\nThe robot should be able to (in priority order):\n\nRemain on the table without falling off or requiring human interaction.\nMove around the table, clearing off LEGO® blocks (use any spares available from your kit, but please use the larger pieces to avoid losing the smaller ones).\nStop after a set period of time (for example, stop after performing these actions for one minute)",
+    "crumbs": [
+      "Bonus Project #1: Sweeper"
+    ]
+  },
+  {
+    "objectID": "bonus/bonus1.html#additional-materials-needed",
+    "href": "bonus/bonus1.html#additional-materials-needed",
+    "title": "Bonus Project #1: Sweeper",
+    "section": "Additional materials needed",
+    "text": "Additional materials needed\n\nA surface for the robot to drive around, raised at least a few inches off of the floor or table.\nSpare LEGO® bricks (use the larger parts from the kit, not the smaller pieces, to avoid losing small parts).",
+    "crumbs": [
+      "Bonus Project #1: Sweeper"
+    ]
+  },
+  {
+    "objectID": "bonus/bonus1.html#additional-challenges",
+    "href": "bonus/bonus1.html#additional-challenges",
+    "title": "Bonus Project #1: Sweeper",
+    "section": "Additional Challenges",
+    "text": "Additional Challenges\n\nAdd a Force Sensor and stop only after no obstacles have been encountered for 30 seconds.\nAdd a sensor that can be used to reactivate the robot if it needs to perform more cleaning duties.",
+    "crumbs": [
+      "Bonus Project #1: Sweeper"
+    ]
+  },
+  {
+    "objectID": "bonus/bonus2.html",
+    "href": "bonus/bonus2.html",
+    "title": "Bonus Project 2: Puck Flinger",
+    "section": "",
+    "text": "Objective\nDesign and construct a mechanism that can fling a puck toward a target.",
+    "crumbs": [
+      "Bonus Project 2: Puck Flinger"
+    ]
+  },
+  {
+    "objectID": "bonus/bonus2.html#materials",
+    "href": "bonus/bonus2.html#materials",
+    "title": "Bonus Project 2: Puck Flinger",
+    "section": "Materials",
+    "text": "Materials\n\na jar lid to use as a puck\nbook or other object that can stand as a target\ntape and/or flashlight (optional)\n\n\n\n\nJar lid puck",
+    "crumbs": [
+      "Bonus Project 2: Puck Flinger"
+    ]
+  },
+  {
+    "objectID": "bonus/bonus2.html#project-description",
+    "href": "bonus/bonus2.html#project-description",
+    "title": "Bonus Project 2: Puck Flinger",
+    "section": "Project Description",
+    "text": "Project Description\n\nModify your existing robot vehicle to add a mechanism that can fling a puck at a target a few feet away.\nPlace the puck 1 to 2 feet away from the target, and place your robot another foot away from the puck.\nProgram your robot to drive forward to the puck, then fling the puck toward the target.",
+    "crumbs": [
+      "Bonus Project 2: Puck Flinger"
+    ]
+  },
+  {
+    "objectID": "bonus/bonus2.html#additional-challenges",
+    "href": "bonus/bonus2.html#additional-challenges",
+    "title": "Bonus Project 2: Puck Flinger",
+    "section": "Additional Challenges",
+    "text": "Additional Challenges\n\nHow accurately can your robot shoot the puck? Try moving the puck farther away from the target and see if your robot can still hit it.\nWhat if the target is not straight ahead? Move the target off to the side, and design your robot to turn and locate the target before shooting. You can use any sensor you choose for detecting the target – a tape line, the distance sensor, or a flashlight for example.",
+    "crumbs": [
+      "Bonus Project 2: Puck Flinger"
+    ]
+  },
+  {
+    "objectID": "legal.html",
+    "href": "legal.html",
+    "title": "Copyrights/trademarks",
+    "section": "",
+    "text": "LEGO, LEGO MINDSTORMS,LEGO TECHNIC and LEGO Education SPIKE are trademarks of the LEGO Group, which does not sponsor, authorize or endorse this content.\nSonar Image Source: http://en.wikipedia.org/w/index.php?title=File:Sonar_Principle_EN.svg, by Georg Wiora",
+    "crumbs": [
+      "Copyrights/trademarks"
+    ]
+  }
+]

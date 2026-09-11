@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Lesson 1: Write a Simple Drive Forward Program – ILEO Weekly Curriculum with LEGO® SPIKE™ App software</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../challenges/challenge1.html" rel="next">
+<link href="../spike-app/spike-intro.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-343830dee7e81009abd9657442190b55.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../spike-app/spike-lesson1.html">Lesson 1: Write a Simple Drive Forward Program</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">ILEO Weekly Curriculum with LEGO® SPIKE™ App software</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome!</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../spike-app/spike-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to the LEGO® Education SPIKE™ Robot</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../spike-app/spike-lesson1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lesson 1: Write a Simple Drive Forward Program</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../challenges/challenge1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Challenge Project #1: Maze Runner</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../spike-app/spike-lesson2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lesson 2: Oomph! I found the Wall</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../challenges/challenge2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Challenge Project #2: A Maze, Repeatedly</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../spike-app/spike-lesson3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lesson 3: The Better to See You With (Kinda)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../challenges/challenge3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Challenge Project #3: A Moth to a Flame</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../challenges/challenge4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Challenge Project #4: Robo-Patrol</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lesson4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lesson 4: Sonic Sight</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../challenges/challenge5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Challenge Project #5: Sonic Parking</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lesson5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lesson 5: Smarter Programming with data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lesson6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lesson 6: Guess the Hand game</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../spike-app/spike-lesson6-impl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Coding the Guess the Hand game</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../bonus/bonus1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bonus Project #1: Sweeper</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../bonus/bonus2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bonus Project 2: Puck Flinger</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../legal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Copyrights/trademarks</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#create-a-project" id="toc-create-a-project" class="nav-link active" data-scroll-target="#create-a-project">Create a Project</a></li>
+  <li><a href="#writing-the-code" id="toc-writing-the-code" class="nav-link" data-scroll-target="#writing-the-code">Writing the Code</a></li>
+  <li><a href="#programming-exercise" id="toc-programming-exercise" class="nav-link" data-scroll-target="#programming-exercise">Programming Exercise</a></li>
+  <li><a href="#download-the-program-to-the-spike-brick" id="toc-download-the-program-to-the-spike-brick" class="nav-link" data-scroll-target="#download-the-program-to-the-spike-brick">Download the Program to the SPIKE brick</a>
+  <ul class="collapse">
+  <li><a href="#option-1-connecting-with-a-usb-cable" id="toc-option-1-connecting-with-a-usb-cable" class="nav-link" data-scroll-target="#option-1-connecting-with-a-usb-cable">Option 1: Connecting with a USB cable</a></li>
+  <li><a href="#option-2-connecting-with-bluetooth" id="toc-option-2-connecting-with-bluetooth" class="nav-link" data-scroll-target="#option-2-connecting-with-bluetooth">Option 2: Connecting with Bluetooth</a></li>
+  </ul></li>
+  <li><a href="#prepare-to-run-and-emergency-stop-the-program" id="toc-prepare-to-run-and-emergency-stop-the-program" class="nav-link" data-scroll-target="#prepare-to-run-and-emergency-stop-the-program">Prepare to Run (and Emergency Stop) the Program</a></li>
+  <li><a href="#alternate-program-run-method" id="toc-alternate-program-run-method" class="nav-link" data-scroll-target="#alternate-program-run-method">Alternate Program Run method</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lesson 1: Write a Simple Drive Forward Program</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>To make the robot move, we need to tell the brick what motor ports we connected the drive motors (the motors attached to the wheels) to. Then we can command the motors to move and drive the robot. We’ll build the program with the SPIKE App on a laptop or tablet, then we’ll connect to the robot and download your program to test it.</p>
+<section id="create-a-project" class="level2">
+<h2 class="anchored" data-anchor-id="create-a-project">Create a Project</h2>
+<p>Click the gray ‘plus’ icon near the middle of the screen to create a new project.</p>
+<p>SPIKE App offers three options for creating programs:</p>
+<ul>
+<li>WORD BLOCKS
+<ul>
+<li>Similar to SCRATCH. <a href="https://scratch.mit.edu" class="uri">https://scratch.mit.edu</a></li>
+<li>We recommend word blocks for all programs.</li>
+<li>This document will only cover word blocks.</li>
+</ul></li>
+<li>ICON BLOCKS: (similar to EV3 Lab for those who have used that in the past)</li>
+<li>Python - A popular programming language used by professionals and hobbyists. Ask your mentors if they use Python! <a href="https://python.org" class="uri">https://python.org</a></li>
+</ul>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../spike-app/images/spike-app-new-project.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="SPIKE App New Project dialog."><img src="../spike-app/images/spike-app-new-project.png" class="img-fluid figure-img" style="width:60.0%" alt="SPIKE App New Project dialog."></a></p>
+<figcaption>SPIKE App New Project dialog.</figcaption>
+</figure>
+</div>
+<p>Click the <code>Home</code> icon in the navigation bar, and click <code>New Project</code>. Then name the project with something descriptive like <code>My first SPIKE Project</code>, click <code>WORD BLOCKS</code>, then click the <code>Create</code> button.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Choose WORD BLOCKS when creating your programs.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Always use descriptive names for your projects. It will make them easier to find on your device. SPIKE bricks do not have an LCD display like other MINDSTORMS robots do, so you cannot see which programs the brick contains. The SPIKE App loads programs into slots numbered 0 through 19.</p>
+</div>
+</div>
+<p>The white open area is the Programming Canvas. This is where you will add programming blocks to control your robot. The colorful side part is the Block Palette where the programming blocks live. You can click on the colored dots to scroll the Block Palette to a specific set of functions.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../spike-app/images/spike-app-programming-canvas.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="SPIKE App Programming Canvas"><img src="../spike-app/images/spike-app-programming-canvas.png" class="img-fluid figure-img" style="width:60.0%" alt="SPIKE App Programming Canvas"></a></p>
+<figcaption>SPIKE App Programming Canvas</figcaption>
+</figure>
+</div>
+</section>
+<section id="writing-the-code" class="level2">
+<h2 class="anchored" data-anchor-id="writing-the-code">Writing the Code</h2>
+<p>The SPIKE App can download and run programs in a single step with the Play button. With the Play button, the robot could start moving when you’re not quite ready: the USB cable might be connected, you may wish to put the robot on the ground, etc. So we’ll start every program with a wait block that will prevent the rest of the program from running until you press a brick button.</p>
+</section>
+<section id="programming-exercise" class="level2">
+<h2 class="anchored" data-anchor-id="programming-exercise">Programming Exercise</h2>
+<p>Click and drag an orange control <code>wait until</code> block from the Block palette. Drag it near the <code>when program starts</code> block on the canvas, then a shadow will appear, and then you can release the block and the new block will snap into place. This is how you’ll build your entire program.</p>
+<p>Now click and drag a teal sensors <code>is left button pressed</code> block and drop it to the <code>wait until</code> block to place this sensor command into the wait until block.</p>
+<p>Click and drag the pink movement block <code>set movement motors to</code> block from the Block palette. Each programming block tells the robot different things to do. The <code>set movement motors to</code> block configures two motors that other movement blocks control.</p>
+<p>By convention (meaning a common practice), we connect SPIKE motor ports A and B (the first ports on either side of the intelligent brick) to the drive motors. If you follow this convention, it will save you a little time in creating your programs. You may select any of the ports A through F to use as drive motors, or for any other function, you’ll just have to remember to change the blocks to use the correct port when you add them to the program. Sensors, as we’ll discuss later, can also plug into any of the A-F ports. Interestingly, the <code>Driving Base 1</code> robot we typically build with this lesson does not follow this convention. So today you’ll need to change the ports in the program, or move the wires on your robot.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../spike-app/images/spike-app-movement-select-port.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Configuring motor ports"><img src="../spike-app/images/spike-app-movement-select-port.png" class="img-fluid figure-img" style="width:60.0%" alt="Configuring motor ports"></a></p>
+<figcaption>Configuring motor ports</figcaption>
+</figure>
+</div>
+<p>Next, click and drag a pink movement <code>move</code> block from the Block Palette and connect it to your program. Click the Your program should look like the following figure. Avoid the <code>start moving</code> blocks for any of your programs for now.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../spike-app/images/spike-app-drive-forward-sample.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Simple drive forward program."><img src="../spike-app/images/spike-app-drive-forward-sample.png" class="img-fluid figure-img" style="width:100.0%" alt="Simple drive forward program."></a></p>
+<figcaption>Simple drive forward program.</figcaption>
+</figure>
+</div>
+<p>With the <code>Driving Base 1</code> robot, and the pink movement blocks, moving forward means moving the motors clockwise. With other robot designs or motor orientations, you might need to adjust your program as you may need to tell the program to move backward so certain robots move forward. That or you have a mistake (or bug) in your program or robot design.</p>
+<p>But if we mount the motor upside down on the robot and the program tells the motor to move FORWARD, the robot will actually move BACKWARD. This isn’t wrong, we might have to adjust the program to make the robot behave how we want. Also, depending on what motor you connect as B or C, left and right could be the opposite of what you expect, which you must adjust for to make the robot steer the way you want.</p>
+<p>Power on your robot. On the Spike brick, press the large round button until it lights up.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>These are common errors when building and programming an SPIKE robot. Check these first when you have problems:</p>
+<ul>
+<li>The ports specified in the program do not match robot build. Depending on how far along you are, it might be easier to change the program or the robot.</li>
+<li>Make sure C and D are selected as shown by clicking <code>C</code> first for left and <code>D</code> second for right. If you click them in the wrong order, or accidentally C or D a second time, the order will be reversed. This means that when your program says “go forward” the robot will move backward, and turning left and right will be reversed.
+<ul>
+<li>With <code>Driving Base 1</code> the back of the robot (and backward direction) is where the white roller ball and the bottom of the brick where the left, right and large button are.</li>
+</ul></li>
+<li>Forgetting to connect a wire from the intelligent brick to the motor or wire.</li>
+<li>The wire might not be fully seated in the port. Unplug and re-plug the wires on the brick side.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="download-the-program-to-the-spike-brick" class="level2">
+<h2 class="anchored" data-anchor-id="download-the-program-to-the-spike-brick">Download the Program to the SPIKE brick</h2>
+<p>Connect your device to the SPIKE brick using one of these methods.</p>
+<ul>
+<li>Connect the robot using the USB cable from your SPIKE kit. This is faster and less troublesome. This is supported with the following devices:
+<ul>
+<li>SPIKE App with a Windows or Mac computer.</li>
+<li>The SPIKE web app with Google Chrome web browser on Windows, Mac, or Chromebook.</li>
+</ul></li>
+<li>If you are using a tablet or a Chromebook with the SPIKE App, you’ll connect with Bluetooth.</li>
+</ul>
+<p>Right now, the <code>Connect</code> icon on the Programming Canvas should show a red dot, indicating no SPIKE is connected. Follow the instructions below for the connection method you choose.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../spike-app/images/spike-app-connect-icon-no-SPIKE.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="SPIKE not connected."><img src="../spike-app/images/spike-app-connect-icon-no-SPIKE.png" class="img-fluid figure-img" style="width:1in" alt="SPIKE not connected."></a></p>
+<figcaption>SPIKE not connected.</figcaption>
+</figure>
+</div>
+<section id="option-1-connecting-with-a-usb-cable" class="level3">
+<h3 class="anchored" data-anchor-id="option-1-connecting-with-a-usb-cable">Option 1: Connecting with a USB cable</h3>
+<p>This is the fastest and easiest method, but only works with Windows or Mac versions of SPIKE App, or with the web-based version of the SPIKE App with the Google Chrome browser.</p>
+<p>Connect the small end of the USB cable to the USB port on top of the SPIKE brick (one the side with the small Bluetooth button). The first time connecting a robot it may take some time to install drivers before the connection process will complete. The <code>Connect</code> icon show now show a green dot.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../spike-app/images/spike-app-connected-with-SPIKE.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="SPIKE connected."><img src="../spike-app/images/spike-app-connected-with-SPIKE.png" class="img-fluid figure-img" style="width:1.5in" alt="SPIKE connected."></a></p>
+<figcaption>SPIKE connected.</figcaption>
+</figure>
+</div>
+<p>You might check that Bluetooth and Wifi are turned off on the brick, as you do not need them. This will save battery power.</p>
+</section>
+<section id="option-2-connecting-with-bluetooth" class="level3">
+<h3 class="anchored" data-anchor-id="option-2-connecting-with-bluetooth">Option 2: Connecting with Bluetooth</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you are using the SPIKE web app with the Chrome browser, it does not support connecting to SPIKE over Bluetooth. You must use the USB cable as described in the previous section.</p>
+</div>
+</div>
+<p>Most devices that run SPIKE App have Bluetooth, a wireless technology that lets devices communicate. You’ve probably seen or used it to connect phones, tablets, speakers, headphones, entertainment or other devices together. Bluetooth must be enabled on the device and on the SPIKE brick, and the devices paired together. Sometimes Bluetooth connection can be problematic to setup or reconnect. Ask an instructor if you are having trouble with this.</p>
+<ol type="1">
+<li><p>Check that Bluetooth is enabled on the device that is running SPIKE App. Typically, you can access this in the taskbar or settings. It might take a few moments for Bluetooth to start.</p></li>
+<li><p>Enable Bluetooth on the SPIKE brick. Press the smaller button near the top of the brick that is marked with the Bluetooth ‘B’ symbol. SPIKE App also will show these steps when you try to connect. If this is the first time pairing this brick with your device, the Bluetooth button will flash and beep.</p></li>
+<li><p>Click the <code>connect</code> icon on your Programming Canvas in SPIKE App and follow the instructions to connect your SPIKE.</p>
+<ul>
+<li><p>A platform-specific dialog will appear showing SPIKE bricks (though you might need to wait a moment for SPIKE App to find and display your SPIKE). In a classroom environment there might be several. Hopefully, the name of the brick is the same as your MINDSTORMS kit number. Select the name of your brick.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../spike-app/images/spike-app-bt-pair-macaddr-ipad.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Bluetooth pairing dialog (iPad dialog shown)."><img src="../spike-app/images/spike-app-bt-pair-macaddr-ipad.png" class="img-fluid figure-img" style="width:80.0%" alt="Bluetooth pairing dialog (iPad dialog shown)."></a></p>
+<figcaption>Bluetooth pairing dialog (iPad dialog shown).</figcaption>
+</figure>
+</div></li>
+<li><p>The brick should connect.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../spike-app/images/spike-app-bt-connected.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="SPIKE connected."><img src="../spike-app/images/spike-app-bt-connected.png" class="img-fluid figure-img" style="width:60.0%" alt="SPIKE connected."></a></p>
+<figcaption>SPIKE connected.</figcaption>
+</figure>
+</div></li>
+</ul></li>
+<li><p>Click the <code>BACK TO PROJECT</code> button. The <code>connect</code> icon should change.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../spike-app/images/spike-app-connected-with-SPIKE.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="SPIKE connected."><img src="../spike-app/images/spike-app-connected-with-SPIKE.png" class="img-fluid figure-img" style="width:1.5in" alt="SPIKE connected."></a></p>
+<figcaption>SPIKE connected.</figcaption>
+</figure>
+</div></li>
+<li><p>When connected, SPIKEshows the status of the connected motors and sensors. Clicking the <code>connect</code> icon will show more details about the connected sensors and motors. This is very useful when debugging your programs and understanding sensor inputs later.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../spike-app/images/spike-app-connected-brick-details.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Brick details screen"><img src="../spike-app/images/spike-app-connected-brick-details.png" class="img-fluid figure-img" style="width:60.0%" alt="Brick details screen"></a></p>
+<figcaption>Brick details screen</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can rename the brick on this screen, but please avoid using a name other than your kit ID. This will help your instructors deal with connection problems in the class, and to ensure the bricks are placed with their correct kits.</p>
+</div>
+</div></li>
+</ol>
+<p>If you have trouble with the Bluetooth connection work with your instructors and try these steps:</p>
+<ul>
+<li>Close the SPIKE App.</li>
+<li>Go into the settings for your device, find the Bluetooth settings. Un-pair any LEGO robots your device has previously connected to. The will vary depending on your platform (e.g.&nbsp;<code>Forget this device</code> action on iPad) .</li>
+<li>Turn off Bluetooth on your device, wait a few moments then turn it back on.</li>
+<li>You might even restart the device that is running SPIKE App.</li>
+<li>Turn your SPIKE brick off, then back on.</li>
+<li>Attempt to pair the brick again.</li>
+</ul>
+</section>
+</section>
+<section id="prepare-to-run-and-emergency-stop-the-program" class="level2">
+<h2 class="anchored" data-anchor-id="prepare-to-run-and-emergency-stop-the-program">Prepare to Run (and Emergency Stop) the Program</h2>
+<p>Prepare the work area (and yourself) to make sure the robot, cables and computer won’t be damaged or become tangled when the robot starts moving. Be careful so the robot does not drive off of a table: running the robot on the floor might be better.</p>
+<p>Try not to disrupt others around you. You may need to quickly grab or stop the robot if it MISBEHAVES!</p>
+<p>To stop the robot while your program runs, press the large white button: - Practice finding and pressing the button now.</p>
+<p>To download the program to the SPIKE brick, click the yellow play button at the bottom of the programming canvas. This will download and run the program in a single step. Because we added the <code>wait until</code> block, the program will be running, but the robot will not perform any action until we press the left button on the brick.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../spike-app/images/spike-app-download-to-spike-in-progress.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Download to SPIKE in progress - yellow play button changes to spinning progress."><img src="../spike-app/images/spike-app-download-to-spike-in-progress.png" class="img-fluid figure-img" style="width:60.0%" alt="Download to SPIKE in progress - yellow play button changes to spinning progress."></a></p>
+<figcaption>Download to SPIKE in progress - yellow play button changes to spinning progress.</figcaption>
+</figure>
+</div>
+<p>The program should download and run, but it will wait for you to press the left brick button. Prepare your area, remove the USB cable if it is connected, and place the robot (e.g.&nbsp;on the floor) to prepare it to run. Be ready to grab the robot and stop the program if it malfunctions. Press the left button on the brick now to run the remainder of your program.</p>
+<p>If your robot moves forward slightly, CONGRATULATIONS! If not, double check your program and that the motor wires are connected properly.</p>
+<p>Feel free to change the settings in the <code>move</code> block in your program and observe how the robot’s behavior changes.</p>
+<ul>
+<li>increase the number of centimeters</li>
+<li>change the unit from <code>centimeters</code> to <code>degrees</code></li>
+<li>change the direction of the robot</li>
+</ul>
+<p>Now add a <code>move right</code> block and try to make the robot turn. Then add a blue motors block and move only one of the motors, C or D (assuming you wired your motors following that convention).</p>
+<p>You should now have a few ways to turn the robot.</p>
+</section>
+<section id="alternate-program-run-method" class="level2">
+<h2 class="anchored" data-anchor-id="alternate-program-run-method">Alternate Program Run method</h2>
+<p>Your program will download to slot 0 on the brick by default. You can select a different slot by clicking the number at the bottom of the programming canvas This allows you to load multiple programs on the brick, and to run them using the brick buttons when you want.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../spike-app/images/spike-app-download-to-slot-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="SPIKE App Download to Slot 1"><img src="../spike-app/images/spike-app-download-to-slot-1.png" class="img-fluid figure-img" style="width:20.0%" alt="SPIKE App Download to Slot 1"></a></p>
+<figcaption>SPIKE App Download to Slot 1</figcaption>
+</figure>
+</div>
+<p>You’ll use this method at the competition as you’ll already have downloaded your program to the robot via the download or download and run buttons. You can then run the program on the brick without needing SPIKE App. Practice this periodically during class before we go to the final competition. This also allows you to have multiple versions of a program that vary slightly since you can’t make changes to the program at the judging arena.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/ibm\.ent\.box\.com\/ILEO-Project");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../spike-app/spike-intro.html" class="pagination-link" aria-label="Introduction to the LEGO® Education SPIKE&amp;trade; Robot">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction to the LEGO® Education SPIKE™ Robot</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../challenges/challenge1.html" class="pagination-link" aria-label="Challenge Project #1: Maze Runner">
+        <span class="nav-page-text">Challenge Project #1: Maze Runner</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>SPIKE Prime</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>
